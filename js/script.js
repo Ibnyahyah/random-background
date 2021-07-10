@@ -11,10 +11,11 @@ btn.addEventListener("click", function(){
     if (colorName.innerText.length > 1){
         this.remove([0]);
     }
-    function reload(){
-        document.location.reload()
-    }
-    reload()
+    setTimeout(
+        function(){
+            document.location.reload();
+        },5000
+    );
 })
 
 function randombg(){
