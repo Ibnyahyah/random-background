@@ -6,13 +6,15 @@ btn.addEventListener("click", function(){
     const colorName = document.createElement('div');
     colorName.classList.add('color-name');
     color.appendChild(colorName);
-    // colorName.innerText = [];
-    // randombg().push([colorName.innerText]);
-    // if (colorName.innerText.length > 1) {
-    //     colorName.innerText.remove();
-    // } else {
-        
-    // }
+
+    colorName.innerText = randombg()
+    if (colorName.innerText.length > 1){
+        this.remove([0]);
+    }
+    function reload(){
+        document.location.reload()
+    }
+    reload()
 })
 
 function randombg(){
